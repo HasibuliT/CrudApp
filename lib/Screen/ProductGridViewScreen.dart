@@ -80,7 +80,9 @@ class _ProductGridViewScreenState extends State<ProductGridViewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('List Product'),),
+      appBar: AppBar(title: Text('List Product'),
+        centerTitle: true,
+      ),
       body: Stack(
         children: [
           ScreenBackground(context),
