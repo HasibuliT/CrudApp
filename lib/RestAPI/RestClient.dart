@@ -24,7 +24,7 @@ Future<List> ProductGridViewListRequest() async {
 
 //Product Create
 Future<bool> ProductCreateRequest(FormValues) async{
-  var URL=Uri.parse("https://crud.devnextech.com/api/v1/CreateProduct");
+  var URL=Uri.parse("https://crud.teamrabbil.com/api/v1/CreateProduct");
   var PostBody=json.encode(FormValues);
   var PostHeader={"Content-Type":"application/json"};
   var response= await  http.post(URL,headers:PostHeader,body: PostBody);
